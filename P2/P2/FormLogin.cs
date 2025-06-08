@@ -5,9 +5,9 @@ using System.Windows.Forms;
 
 namespace P2
 {
-    public partial class Form1 : Form
+    public partial class FormLogin : Form
     {
-        public Form1()
+        public FormLogin()
         {
             InitializeComponent();
         }
@@ -42,14 +42,14 @@ namespace P2
                 }
                 else
                 {
-                    MessageBox.Show("Usuário ou senha inválidos.");
+                    MessageBox.Show("Usuário ou senha inválidos!");
                 }
             }
         }
         private void AbrirForm2()
         {
             this.Hide();
-            Form2 form2 = new Form2();
+            FormPrincipal form2 = new FormPrincipal();
             form2.ShowDialog();
             this.Close();
         }

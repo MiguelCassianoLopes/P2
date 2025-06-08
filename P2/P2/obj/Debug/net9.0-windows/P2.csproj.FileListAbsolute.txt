@@ -3,8 +3,6 @@ C:\Users\Computador\source\repos\P2\P2\P2\bin\Debug\net9.0-windows\P2.deps.json
 C:\Users\Computador\source\repos\P2\P2\P2\bin\Debug\net9.0-windows\P2.runtimeconfig.json
 C:\Users\Computador\source\repos\P2\P2\P2\bin\Debug\net9.0-windows\P2.dll
 C:\Users\Computador\source\repos\P2\P2\P2\bin\Debug\net9.0-windows\P2.pdb
-C:\Users\Computador\source\repos\P2\P2\P2\obj\Debug\net9.0-windows\P2.Form1.resources
-C:\Users\Computador\source\repos\P2\P2\P2\obj\Debug\net9.0-windows\P2.Form2.resources
 C:\Users\Computador\source\repos\P2\P2\P2\obj\Debug\net9.0-windows\P2.csproj.GenerateResource.cache
 C:\Users\Computador\source\repos\P2\P2\P2\obj\Debug\net9.0-windows\P2.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\Computador\source\repos\P2\P2\P2\obj\Debug\net9.0-windows\P2.AssemblyInfoInputs.cache
@@ -16,3 +14,5 @@ C:\Users\Computador\source\repos\P2\P2\P2\obj\Debug\net9.0-windows\refint\P2.dll
 C:\Users\Computador\source\repos\P2\P2\P2\obj\Debug\net9.0-windows\P2.pdb
 C:\Users\Computador\source\repos\P2\P2\P2\obj\Debug\net9.0-windows\P2.genruntimeconfig.cache
 C:\Users\Computador\source\repos\P2\P2\P2\obj\Debug\net9.0-windows\ref\P2.dll
+C:\Users\Computador\source\repos\P2\P2\P2\obj\Debug\net9.0-windows\P2.FormLogin.resources
+C:\Users\Computador\source\repos\P2\P2\P2\obj\Debug\net9.0-windows\P2.FormPrincipal.resources

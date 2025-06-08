@@ -1,6 +1,6 @@
 ﻿namespace P2
 {
-    partial class Form1
+    partial class FormLogin
     {
         /// <summary>
         ///  Required designer variable.
@@ -82,7 +82,7 @@
             txtSenha.Size = new Size(146, 23);
             txtSenha.TabIndex = 4;
             // 
-            // Form1
+            // FormLogin
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -92,8 +92,8 @@
             Controls.Add(lbSenha);
             Controls.Add(lbUsuario);
             Controls.Add(btLogin);
-            Name = "Form1";
-            Text = "Form1";
+            Name = "FormLogin";
+            Text = "Login";
             ResumeLayout(false);
             PerformLayout();
         }
