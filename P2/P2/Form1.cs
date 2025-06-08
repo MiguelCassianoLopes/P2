@@ -20,6 +20,30 @@ namespace P2
             if (usuario == "ADMIN" && senha == "123")
             {
                 AbrirForm2();
+                return;
+
+            }
+
+            string caminhoCsv = "C:\\Users\\Computador\\source\\repos\\P2\\usuarios.csv";
+
+            if (File.Exists(caminhoCsv))
+
+            {
+                var linhas = File.ReadAllLines(caminhoCsv);
+
+                bool usuarioEncontrado = linhas.Any(linha =>
+                {
+                    var partes = linha.Split(';');
+                    return partes.Length >= 2 && partes[0] == usuario && partes[1] == senha;
+                });
+                if (usuarioEncontrado)
+                {
+                    AbrirForm2();
+                }
+                else
+                {
+                    MessageBox.Show("Usuário ou senha inválidos.");
+                }
             }
         }
         private void AbrirForm2()
