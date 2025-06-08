@@ -25,7 +25,7 @@ namespace P2
 
         private void tsClientes_Click(object sender, EventArgs e)
         {
-
+            var form = new FormClientes();
         }
 
         private void tsProdutos_Click(object sender, EventArgs e)
