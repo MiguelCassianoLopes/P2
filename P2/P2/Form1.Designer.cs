@@ -28,69 +28,70 @@
         /// </summary>
         private void InitializeComponent()
         {
-            button1 = new Button();
-            label1 = new Label();
-            label2 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
+            btLogin = new Button();
+            lbUsuario = new Label();
+            lbSenha = new Label();
+            txtUsuario = new TextBox();
+            txtSenha = new TextBox();
             SuspendLayout();
             // 
-            // button1
+            // btLogin
             // 
-            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            button1.Location = new Point(131, 214);
-            button1.Name = "button1";
-            button1.Size = new Size(101, 23);
-            button1.TabIndex = 0;
-            button1.Text = "LOGIN";
-            button1.UseVisualStyleBackColor = true;
+            btLogin.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            btLogin.Location = new Point(131, 214);
+            btLogin.Name = "btLogin";
+            btLogin.Size = new Size(101, 23);
+            btLogin.TabIndex = 0;
+            btLogin.Text = "LOGIN";
+            btLogin.UseVisualStyleBackColor = true;
+            btLogin.Click += btLogin_Click;
             // 
-            // label1
+            // lbUsuario
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label1.Location = new Point(40, 159);
-            label1.Name = "label1";
-            label1.RightToLeft = RightToLeft.No;
-            label1.Size = new Size(64, 15);
-            label1.TabIndex = 1;
-            label1.Text = "USUÁRIO:";
-            label1.UseWaitCursor = true;
+            lbUsuario.AutoSize = true;
+            lbUsuario.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lbUsuario.Location = new Point(40, 159);
+            lbUsuario.Name = "lbUsuario";
+            lbUsuario.RightToLeft = RightToLeft.No;
+            lbUsuario.Size = new Size(64, 15);
+            lbUsuario.TabIndex = 1;
+            lbUsuario.Text = "USUÁRIO:";
+            lbUsuario.UseWaitCursor = true;
             // 
-            // label2
+            // lbSenha
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            label2.Location = new Point(55, 188);
-            label2.Name = "label2";
-            label2.Size = new Size(49, 15);
-            label2.TabIndex = 2;
-            label2.Text = "SENHA:";
+            lbSenha.AutoSize = true;
+            lbSenha.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            lbSenha.Location = new Point(55, 188);
+            lbSenha.Name = "lbSenha";
+            lbSenha.Size = new Size(49, 15);
+            lbSenha.TabIndex = 2;
+            lbSenha.Text = "SENHA:";
             // 
-            // textBox1
+            // txtUsuario
             // 
-            textBox1.Location = new Point(110, 156);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(146, 23);
-            textBox1.TabIndex = 3;
+            txtUsuario.Location = new Point(110, 156);
+            txtUsuario.Name = "txtUsuario";
+            txtUsuario.Size = new Size(146, 23);
+            txtUsuario.TabIndex = 3;
             // 
-            // textBox2
+            // txtSenha
             // 
-            textBox2.Location = new Point(110, 185);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(146, 23);
-            textBox2.TabIndex = 4;
+            txtSenha.Location = new Point(110, 185);
+            txtSenha.Name = "txtSenha";
+            txtSenha.Size = new Size(146, 23);
+            txtSenha.TabIndex = 4;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(346, 378);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
-            Controls.Add(label2);
-            Controls.Add(label1);
-            Controls.Add(button1);
+            Controls.Add(txtSenha);
+            Controls.Add(txtUsuario);
+            Controls.Add(lbSenha);
+            Controls.Add(lbUsuario);
+            Controls.Add(btLogin);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -99,10 +100,10 @@
 
         #endregion
 
-        private Button button1;
-        private Label label1;
-        private Label label2;
-        private TextBox textBox1;
-        private TextBox textBox2;
+        private Button btLogin;
+        private Label lbUsuario;
+        private Label lbSenha;
+        private TextBox txtUsuario;
+        private TextBox txtSenha;
     }
 }
