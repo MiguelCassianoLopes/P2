@@ -81,6 +81,7 @@
             btCadastra.TabIndex = 4;
             btCadastra.Text = "Cadastrar";
             btCadastra.UseVisualStyleBackColor = true;
+            btCadastra.Click += btCadastra_Click;
             // 
             // btAlterarSenha
             // 

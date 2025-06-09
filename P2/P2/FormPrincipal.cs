@@ -36,26 +36,26 @@ namespace P2
 
         private void tsClientes_Click(object sender, EventArgs e)
         {
-            var form = new FormClientes();
-            form.ShowDialog();
+            FormClientes clientes = new FormClientes();
+            clientes.Show();
         }
 
         private void tsProdutos_Click(object sender, EventArgs e)
         {
-            var form = new FormProdutos();
-            form.ShowDialog();
+            FormProdutos produtos = new FormProdutos();
+            produtos.Show();
         }
 
         private void tsPedidos_Click(object sender, EventArgs e)
         {
-            var form = new FormPedidos();
-            form.ShowDialog();
+            FormPedidos pedidos = new FormPedidos();
+            pedidos.Show();
         }
 
         private void tsUsuarios_Click(object sender, EventArgs e)
         {
-            var form = new FormUsuarios();
-            form.ShowDialog();
+            FormUsuarios usuarios = new FormUsuarios();
+            usuarios.Show();
         }
     }
 }
