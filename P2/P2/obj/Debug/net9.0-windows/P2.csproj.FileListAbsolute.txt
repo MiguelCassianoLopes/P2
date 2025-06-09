@@ -16,3 +16,7 @@ C:\Users\Computador\source\repos\P2\P2\P2\obj\Debug\net9.0-windows\P2.genruntime
 C:\Users\Computador\source\repos\P2\P2\P2\obj\Debug\net9.0-windows\ref\P2.dll
 C:\Users\Computador\source\repos\P2\P2\P2\obj\Debug\net9.0-windows\P2.FormLogin.resources
 C:\Users\Computador\source\repos\P2\P2\P2\obj\Debug\net9.0-windows\P2.FormPrincipal.resources
+C:\Users\Computador\source\repos\P2\P2\P2\obj\Debug\net9.0-windows\P2.FormClientes.resources
+C:\Users\Computador\source\repos\P2\P2\P2\obj\Debug\net9.0-windows\P2.FormPedidos.resources
+C:\Users\Computador\source\repos\P2\P2\P2\obj\Debug\net9.0-windows\P2.FormProdutos.resources
+C:\Users\Computador\source\repos\P2\P2\P2\obj\Debug\net9.0-windows\P2.FormUsuarios.resources

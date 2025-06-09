@@ -19,7 +19,7 @@ namespace P2
 
             if (usuario == "ADMIN" && senha == "123")
             {
-                AbrirForm2();
+                AbrirForm2(usuario);
                 return;
 
             }
@@ -38,7 +38,7 @@ namespace P2
                 });
                 if (usuarioEncontrado)
                 {
-                    AbrirForm2();
+                    AbrirForm2(usuario);
                 }
                 else
                 {
@@ -46,12 +46,16 @@ namespace P2
                 }
             }
         }
-        private void AbrirForm2()
+        private void AbrirForm2(string usuario)
         {
+            FormPrincipal principal = new FormPrincipal(usuario);
+            principal.Show();
             this.Hide();
-            FormPrincipal form2 = new FormPrincipal();
-            form2.ShowDialog();
-            this.Close();
+        }
+
+        private void FormLogin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

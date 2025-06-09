@@ -94,6 +94,7 @@
             Controls.Add(btLogin);
             Name = "FormLogin";
             Text = "Login";
+            Load += FormLogin_Load;
             ResumeLayout(false);
             PerformLayout();
         }

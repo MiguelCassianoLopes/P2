@@ -13,6 +13,17 @@ namespace P2
 {
     public partial class FormPrincipal : Form
     {
+
+        private string usuarioAdmin;
+
+
+        public FormPrincipal(string usuario)
+        {
+            InitializeComponent();
+            usuarioAdmin = usuario;
+            tsUsuarios.Visible = usuario == "ADMIN";
+        }
+
         public FormPrincipal()
         {
             InitializeComponent();
@@ -26,21 +37,25 @@ namespace P2
         private void tsClientes_Click(object sender, EventArgs e)
         {
             var form = new FormClientes();
+            form.ShowDialog();
         }
 
         private void tsProdutos_Click(object sender, EventArgs e)
         {
-
+            var form = new FormProdutos();
+            form.ShowDialog();
         }
 
         private void tsPedidos_Click(object sender, EventArgs e)
         {
-
+            var form = new FormPedidos();
+            form.ShowDialog();
         }
 
         private void tsUsuarios_Click(object sender, EventArgs e)
         {
-
+            var form = new FormUsuarios();
+            form.ShowDialog();
         }
     }
 }

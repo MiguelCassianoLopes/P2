@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Computador\\source\\repos\\P2\\P2\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DD54598C-1043-4AB8-8D96-9EFFCECC8817}|P2\\P2.csproj|c:\\users\\computador\\source\\repos\\p2\\p2\\p2\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD54598C-1043-4AB8-8D96-9EFFCECC8817}|P2\\P2.csproj|solutionrelative:p2\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{DD54598C-1043-4AB8-8D96-9EFFCECC8817}|P2\\P2.csproj|C:\\Users\\Computador\\source\\repos\\P2\\P2\\p2\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{DD54598C-1043-4AB8-8D96-9EFFCECC8817}|P2\\P2.csproj|solutionrelative:p2\\formlogin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD54598C-1043-4AB8-8D96-9EFFCECC8817}|P2\\P2.csproj|c:\\users\\computador\\source\\repos\\p2\\p2\\p2\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{DD54598C-1043-4AB8-8D96-9EFFCECC8817}|P2\\P2.csproj|solutionrelative:p2\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DD54598C-1043-4AB8-8D96-9EFFCECC8817}|P2\\P2.csproj|c:\\users\\computador\\source\\repos\\p2\\p2\\p2\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DD54598C-1043-4AB8-8D96-9EFFCECC8817}|P2\\P2.csproj|solutionrelative:p2\\formprincipal.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +14,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,53 +30,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormPrincipal.cs [Projeto]",
-              "DocumentMoniker": "C:\\Users\\Computador\\source\\repos\\P2\\P2\\P2\\FormPrincipal.cs",
-              "RelativeDocumentMoniker": "P2\\FormPrincipal.cs",
-              "ToolTip": "C:\\Users\\Computador\\source\\repos\\P2\\P2\\P2\\FormPrincipal.cs [Projeto]",
-              "RelativeToolTip": "P2\\FormPrincipal.cs [Projeto]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T16:51:36.286Z",
-              "EditorCaption": " [Projeto]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "FormLogin.cs [Projeto]",
               "DocumentMoniker": "C:\\Users\\Computador\\source\\repos\\P2\\P2\\P2\\FormLogin.cs",
               "RelativeDocumentMoniker": "P2\\FormLogin.cs",
               "ToolTip": "C:\\Users\\Computador\\source\\repos\\P2\\P2\\P2\\FormLogin.cs [Projeto]",
               "RelativeToolTip": "P2\\FormLogin.cs [Projeto]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T15:29:48.331Z",
+              "WhenOpened": "2025-06-08T23:48:52.534Z",
               "EditorCaption": " [Projeto]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "FormLogin.cs",
-              "DocumentMoniker": "C:\\Users\\Computador\\source\\repos\\P2\\P2\\P2\\FormLogin.cs",
-              "RelativeDocumentMoniker": "P2\\FormLogin.cs",
-              "ToolTip": "C:\\Users\\Computador\\source\\repos\\P2\\P2\\P2\\FormLogin.cs",
-              "RelativeToolTip": "P2\\FormLogin.cs",
-              "ViewState": "AgIAABIAAAAAAAAAAAAowC8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T16:26:15.999Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "FormPrincipal.cs",
-              "DocumentMoniker": "C:\\Users\\Computador\\source\\repos\\P2\\P2\\P2\\FormPrincipal.cs",
-              "RelativeDocumentMoniker": "P2\\FormPrincipal.cs",
-              "ToolTip": "C:\\Users\\Computador\\source\\repos\\P2\\P2\\P2\\FormPrincipal.cs",
-              "RelativeToolTip": "P2\\FormPrincipal.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAAQwCsAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-08T16:52:24.347Z",
-              "EditorCaption": ""
             }
           ]
         }
