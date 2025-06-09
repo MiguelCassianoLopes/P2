@@ -13,7 +13,8 @@ namespace P2
     public partial class FormUsuarios : Form
     {
         private string usuarioLogado;
-        private string caminhoUsuarios = "C:\\Users\\Computador\\source\\repos\\P2\\usuarios.csv";
+        private string caminhoCsv = "C:\\Users\\Computador\\source\\repos\\P2\\usuarios.csv";
+
         public FormUsuarios(string usuario)
         {
             InitializeComponent();
@@ -23,6 +24,7 @@ namespace P2
 
         public FormUsuarios()
         {
+            InitializeComponent();
         }
 
         private void FormUsuarios_Load(object sender, EventArgs e)
@@ -32,40 +34,117 @@ namespace P2
         private void CarregarUsuarios()
         {
             lstUsuarios.Items.Clear();
-            if (File.Exists(usuarioLogado))
+            if (File.Exists(caminhoCsv))
             {
 
-                var linhas = File.ReadAllLines(caminhoUsuarios);
+                var linhas = File.ReadAllLines(caminhoCsv);
                 foreach (var linha in linhas)
                 {
                     var dados = linha.Split(';');
                     if (dados.Length >= 1)
-                    {
-                        string usuario = dados[0];
-                        string senha = dados[1];
-                        lstUsuarios.Items.Add($"{usuario} - {senha}");
+                    lstUsuarios.Items.Add(dados[0]);
                     }
                 }
-            }
 
-        }
+            }
 
         private void btCadastra_Click(object sender, EventArgs e)
         {
             if (usuarioLogado == "ADMIN")
             {
-                MessageBox.Show("Somente o administrador pode cadastrar usuários!", "Acesso Negado", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Somente o administrador pode cadastrar usuários!");
                 return;
             }
 
             string novoUsuario = txtUsuario.Text.Trim();
             string novaSenha = txtSenha.Text.Trim();
 
-            if (novoUsuario == "" && novaSenha == "")
+            if (novoUsuario == "" || novaSenha == "")
             {
-                MessageBox.Show("Preencha os campos de usuário e senha!", "Campos Vazios", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                MessageBox.Show("Preencha os campos de usuário e senha!");
                 return;
             }
+
+            if (File.Exists(caminhoCsv) && File.ReadAllLines(caminhoCsv).Any(l => l.Split(',')[0] == novoUsuario))
+            {
+                    MessageBox.Show("Usuário já cadastrado!");
+                return;
+            }
+
+                File.AppendAllText(caminhoCsv, $"{novoUsuario},{novaSenha}{Environment.NewLine}");
+                MessageBox.Show("Usuário cadastrado!");
+                CarregarUsuarios();
+                txtUsuario.Clear();
+                txtSenha.Clear();
+            }
+        private void btAlterarSenha_Click(object sender, EventArgs e)
+        {
+            string novoUsuario = txtUsuario.Text.Trim();
+            string novaSenha = txtSenha.Text.Trim();
+
+            if (usuarioLogado == "ADMIN" && novoUsuario == usuarioLogado)
+            {
+                MessageBox.Show("Somente o administrador pode alterar senhas de outros usuários!");
+                return;
+            }
+
+            if (!File.Exists(caminhoCsv)) return;
+
+            var linhas = File.ReadAllLines(caminhoCsv).ToList();
+            bool alterado = false;
+
+            for (int i = 0; i < linhas.Count; i++)
+            {
+                var partes = linhas[i].Split(',');
+                if (partes[0] == novoUsuario)
+                {
+                    linhas[i] = $"{novoUsuario},{novaSenha}";
+                    alterado = true;
+                    break;
+                }
+            }
+
+            if (alterado)
+            {
+                File.WriteAllLines(caminhoCsv, linhas);
+                MessageBox.Show("Senha alterada com sucesso.");
+            }
+            
+            else
+       
+            {
+                MessageBox.Show("Usuário não encontrado!");
+
+            }
+        }
+
+        private void btExcluir_Click(object sender, EventArgs e)
+        {
+            if (usuarioLogado == "ADMIN")
+            {
+                MessageBox.Show("Somente o administrador pode excluir usuários!");
+                return;
+            }
+
+            string usuario = txtUsuario.Text.Trim();
+
+            if (!File.Exists(caminhoCsv)) return;
+
+            var linhas = File.ReadAllLines(caminhoCsv).ToList();
+            var novaLista = linhas.Where(l => !l.StartsWith(usuario + ",")).ToList();
+
+            if (novaLista.Count == linhas.Count)
+            {
+                MessageBox.Show("Usuário não encontrado.");
+                return;
+            }
+            
+            File.WriteAllLines(caminhoCsv, novaLista);
+            MessageBox.Show("Usuário excluído com sucesso.");
+            CarregarUsuarios();
+            txtUsuario.Clear();
+            txtSenha.Clear();
+
         }
     }
 }
